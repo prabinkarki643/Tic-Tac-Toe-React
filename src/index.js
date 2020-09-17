@@ -95,13 +95,16 @@ function Game() {
             const element = colorsText[index];
             element.style.color ='black'
           }
-          const [a, b, c] = winner.line;
-          const aEle =  document.querySelector(`#square-${a}`)
-          const bEle =  document.querySelector(`#square-${b}`)
-          const cEle =  document.querySelector(`#square-${c}`)
-          aEle.style.backgroundColor ='#7299a8';
-          bEle.style.backgroundColor ='#7299a8';
-          cEle.style.backgroundColor ='#7299a8';
+          if(winner){
+            const [a, b, c] = winner.line;
+            const aEle =  document.querySelector(`#square-${a}`)
+            const bEle =  document.querySelector(`#square-${b}`)
+            const cEle =  document.querySelector(`#square-${c}`)
+            aEle.style.backgroundColor ='#7299a8';
+            bEle.style.backgroundColor ='#7299a8';
+            cEle.style.backgroundColor ='#7299a8';
+          }
+        
           setSquares(Array(9).fill(null));
           setIsXNext(true);
         }}
