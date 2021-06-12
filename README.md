@@ -2,7 +2,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 <img src="./Sample_Image.png">
-## Demo
+
+### Demo
 
 <a href="https://githubprabin143.github.io/Tic-Tac-Toe-React" target="_blank">View Demo </a>
 
